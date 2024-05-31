@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Passkeys Extension</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="notification/style.css">
+
+</head>
+
+<body>
+  <h1 id="title">Passkeys Register</h1>
+
+  <div id="form-container">
+    <!-- 注册表单 -->
+    <form id="register-form">
+      <input type="text" id="register-username" placeholder="Username" required />
+      <button type="submit">Register</button>
+    </form>
+
+    <!-- 登录表单 -->
+    <form id="login-form" class="hidden">
+      <input type="text" id="login-username" placeholder="Enter username">
+      <button type="submit" id="loginButton">Login</button>
+      <div id="status"></div>
+    </form>
+  </div>
+
+  <a id="toggleButton">Switch to Login</a>
+  <!-- 通知容器 -->
+  <div id="notification-container"></div>
+  <script src="base64.js"></script>
+  <script src="notification/index.js"></script>
+  <script src="popup.js"></script>
+</body>
+
+</html>
